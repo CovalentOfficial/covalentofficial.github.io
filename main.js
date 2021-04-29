@@ -29,8 +29,11 @@ function updateTime() {
 function updateCount(){
     var currentDate = new Date().getTime();
     var currentCount = Math.floor((startDate - currentDate) / 1000 * 300);
-    $('#countOfTokens').text(currentCount);
+    $('#countOfTokens').text(numberWithCommas(currentCount));
 
+}
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 $(window).ready(function(){
