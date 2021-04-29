@@ -1,4 +1,4 @@
-var startDate = new Date("Sun, 01 May 2021 00:00:00 UTC");
+var startDate = new Date("Sun, 29 Apr 2021 8:00:00 UTC");
 
 var registerActive = false;
 var subscribeActive = false;
